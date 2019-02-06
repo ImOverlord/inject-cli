@@ -1,5 +1,8 @@
 # Inject-cli
 
+[![Build Status](https://travis-ci.org/ImOverlord/inject-cli.svg?branch=master)](https://travis-ci.org/ImOverlord/inject-cli)
+[![Coverage Status](https://coveralls.io/repos/github/ImOverlord/inject-cli/badge.svg?branch=master)](https://coveralls.io/github/ImOverlord/inject-cli?branch=master)
+
 Simple cli for creating projects that used Dependency injection. The cli uses [sloth-ts-injection](https://github.com/ImOverlord/sloth-ts-injection) as DI library.
 
 # Installing
