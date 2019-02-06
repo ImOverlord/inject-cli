@@ -1,8 +1,7 @@
 {
   "name": "inject-cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple CLI for sloth-ts-injection",
-  "main": "index.js",
   "scripts": {
     "test": "jest -c ./jest.config.js",
     "build": "tsc",
