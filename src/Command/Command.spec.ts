@@ -5,7 +5,7 @@ import * as fs from 'fs';
 describe("Command", () => {
 
     let injector: Injector;
-    let command: Command
+    let command: Command;
 
     beforeEach(() => {
         injector = new Injector();
@@ -42,7 +42,7 @@ describe("Command", () => {
 
         it("Should handle no user custom template", () => {
             spyOn(fs, 'readdirSync').and.callFake(() => {
-                throw 'e';
+                throw Error("UT");
             });
             const template = command['findTemplates']();
             expect(template).toEqual([]);
@@ -64,7 +64,7 @@ describe("Command", () => {
                 'name'
             ];
             command.handler();
-            expect(command.getCommands()['test']).toBe('name'); 
+            expect(command.getCommands()['test']).toBe('name');
         });
 
     });

@@ -5,3 +5,4 @@ jest.config.js
 .travis.yml
 tslint.json
 tsconfig.json
+!./resource/tsconfig.json
