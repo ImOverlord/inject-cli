@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strict": false,
+        "outDir": "dist",
+        "sourceMap": true,
+        "declaration": false
+    },
+    "exclude": [
+        "./src/**/*.spec.ts",
+        "./src/**/*.mock.ts"
+    ],
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
