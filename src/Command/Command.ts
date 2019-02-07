@@ -49,7 +49,7 @@ export class Command {
     private findTemplates(): Array<string> {
         const templates: Array<string> = [];
         try {
-            let files = fs.readdirSync(`${root.path}/.injector`);
+            let files = fs.readdirSync(`${root.path}/../.injector`);
             files = files.filter((file) => {
                 return path.extname(file) === '.ts';
             });
