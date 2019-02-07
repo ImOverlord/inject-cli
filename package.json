@@ -1,12 +1,15 @@
 {
   "name": "inject-cli",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Simple CLI for sloth-ts-injection",
   "scripts": {
     "test": "jest -c ./jest.config.js",
     "build": "tsc",
     "lint": "tslint --project ./tsconfig.json",
-    "lint-fix": "tslint --project ./tsconfig.json --fix"
+    "lint-fix": "tslint --project ./tsconfig.json --fix",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "prepublish": "npm run build"
   },
   "bin": {
     "inject": "./dist/app.js"
@@ -30,7 +33,6 @@
   },
   "homepage": "https://github.com/ImOverlord/inject-cli#readme",
   "dependencies": {
-    "@types/commander": "^2.12.2",
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.19",
     "app-root-path": "^2.1.0",
